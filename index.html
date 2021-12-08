@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Book Reviews</h1>
+
+    <form action="/api/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/png" />
+      <input type="text" placeholder="File name" name="filename" />
+      <button type="submit">Upload</button>
+    </form>
+    
+    <form id="addForm">
+      <input type="text" placeholder="Book Title" name="title" />
+      <input type="text" placeholder="Image" name="image"  />
+      <input type="text" placeholder="Rating" name="Rating"  />
+      <textarea type="text" placeholder="Description" name="description"></textarea>
+      <input type="text" placeholder="Author" name="author"/>
+      <button type="submit">Submit</button>
+    </form>
+
+  
+    <h2>Book Reviews</h2>
+
+    <div>
+    <p>The Promised Land</p>
+    <p>By Barrack Obama</p>
+    <img src="./img/book1.jpg">
+    </div>
+ 
+    <div>
+    <p>Wonder</p>
+    <p>By R.J. Palacio</p>
+    <img src="./img/book2.jpg">
+    </div>
+
+    <div>
+    <p>The Vanishing Half</p>
+    <p>By Brit Bennett</p>
+    <img src="./img/book3.jpg">
+    </div>
+
+    <button id="seed">Load Seed Data</button>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
